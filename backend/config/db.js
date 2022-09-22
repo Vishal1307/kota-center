@@ -1,6 +1,9 @@
 const mongoose=require("mongoose")
+
+const db="mongodb+srv://vishal1307:1307@cluster0.ddkdrj8.mongodb.net/kota?retryWrites=true&w=majority"
+
 module.exports=()=>{
-    return mongoose.connect("mongodb+srv://vishal1307:1307@cluster0.ddkdrj8.mongodb.net/kota?retryWrites=true&w=majority",{
+    return mongoose.connect(db,{
         // useCreateIndexes: true,
         useNewUrlParser: true,
         useUnifiedTopology: true,

@@ -6,6 +6,7 @@ app.use(express.json())
 app.post("/register", register)
 app.post("/login",login)
 app.use("/product",product)
+app.use(express.static("kota/build"))
 
 
 
